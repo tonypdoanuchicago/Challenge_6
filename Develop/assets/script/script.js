@@ -45,7 +45,7 @@ function search_clicked() {
 function city_clicked(city)  {
     document.getElementById("city_title").innerHTML = city + " " + getFormattedDate(new Date());
 
-    var url = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=" + apiKey;
+    var url = "https://cors.io/?https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=" + apiKey;
 
     var json = JSON.parse(httpGet(url));
 
@@ -55,7 +55,7 @@ function city_clicked(city)  {
     console.log("lat: " + lat);
     console.log("lon: " + lon);
     
-    var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
+    var weatherUrl = "https://cors.io/?https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
     
     var json2 = JSON.parse(httpGet(weatherUrl));
 
