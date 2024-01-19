@@ -102,50 +102,40 @@ function city_clicked(city)  {
     document.getElementById("humidity").innerHTML = "Humidity: " + humidity + " %";
 
 
-    document.getElementById("icon_image1").src = "http://openweathermap.org/img/w/" + icon1 + ".png";
-    document.getElementById("icon_image1").style.display = "block";
-
-    document.getElementById("day1").innerHTML = getFormattedDate(new Date(dt1 * 1000)) + "<br/><br/>";
+    document.getElementById("day1").innerHTML = "<img id=\"icon_image1\" src=\"http://openweathermap.org/img/w/" + icon1 + ".png\";\" />"
+    document.getElementById("day1").innerHTML += getFormattedDate(new Date(dt1 * 1000)) + "<br/><br/>";
     document.getElementById("day1").innerHTML += "Temp: " + round(((temp - 273.15) * 1.8 + 32)) + " F" + "<br/><br/>";
     document.getElementById("day1").innerHTML += "Wind: " + speed + " MPH" + "<br/><br/>";
     document.getElementById("day1").innerHTML += "Humidity: " + humidity + " %";
 
     ///////
 
-    document.getElementById("icon_image2").src = "http://openweathermap.org/img/w/" + icon2 + ".png";
-    document.getElementById("icon_image2").style.display = "block";
-
-    document.getElementById("day2").innerHTML = getFormattedDate(new Date(dt2 * 1000)) + "<br/><br/>";
+    document.getElementById("day2").innerHTML = "<img id=\"icon_image2\" src=\"http://openweathermap.org/img/w/" + icon2 + ".png\";\" />"
+    document.getElementById("day2").innerHTML += getFormattedDate(new Date(dt2 * 1000)) + "<br/><br/>";
     document.getElementById("day2").innerHTML += "Temp: " + round(((temp2 - 273.15) * 1.8 + 32)) + " F" + "<br/><br/>";
     document.getElementById("day2").innerHTML += "Wind: " + speed2 + " MPH" + "<br/><br/>";
     document.getElementById("day2").innerHTML += "Humidity: " + humidity2 + " %";
 
     ////////
 
-    document.getElementById("icon_image3").src = "http://openweathermap.org/img/w/" + icon3 + ".png";
-    document.getElementById("icon_image3").style.display = "block";
-
-    document.getElementById("day3").innerHTML = getFormattedDate(new Date(dt3 * 1000)) + "<br/><br/>";
+    document.getElementById("day3").innerHTML = "<img id=\"icon_image3\" src=\"http://openweathermap.org/img/w/" + icon3 + ".png\";\" />"
+    document.getElementById("day3").innerHTML += getFormattedDate(new Date(dt3 * 1000)) + "<br/><br/>";
     document.getElementById("day3").innerHTML += "Temp: " + round(((temp3 - 273.15) * 1.8 + 32)) + " F" + "<br/><br/>";
     document.getElementById("day3").innerHTML += "Wind: " + speed3 + " MPH" + "<br/><br/>";
     document.getElementById("day3").innerHTML += "Humidity: " + humidity3 + " %";
 
     //////
 
-    document.getElementById("icon_image4").src = "http://openweathermap.org/img/w/" + icon4 + ".png";
-    document.getElementById("icon_image4").style.display = "block";
-
-    document.getElementById("day4").innerHTML = getFormattedDate(new Date(dt4 * 1000)) + "<br/><br/>";
+    document.getElementById("day4").innerHTML= "<img id=\"icon_image4\" src=\"http://openweathermap.org/img/w/" + icon4 + ".png\";\" />"
+    document.getElementById("day4").innerHTML += getFormattedDate(new Date(dt4 * 1000)) + "<br/><br/>";
     document.getElementById("day4").innerHTML += "Temp: " + round(((temp4 - 273.15) * 1.8 + 32)) + " F" + "<br/><br/>";
     document.getElementById("day4").innerHTML += "Wind: " + speed4 + " MPH" + "<br/><br/>";
     document.getElementById("day4").innerHTML += "Humidity: " + humidity4 + " %";
 
     //////
 
-    document.getElementById("icon_image5").src = "http://openweathermap.org/img/w/" + icon5 + ".png";
-    document.getElementById("icon_image5").style.display = "block";
-
-    document.getElementById("day5").innerHTML = getFormattedDate(new Date(dt5 * 1000)) + "<br/><br/>";
+    document.getElementById("day5").innerHTML = "<img id=\"icon_image5\" src=\"http://openweathermap.org/img/w/" + icon5 + ".png\";\" />"
+    document.getElementById("day5").innerHTML += getFormattedDate(new Date(dt5 * 1000)) + "<br/><br/>";
     document.getElementById("day5").innerHTML += "Temp: " + round(((temp5 - 273.15) * 1.8 + 32)) + " F" + "<br/><br/>";
     document.getElementById("day5").innerHTML += "Wind: " + speed5 + " MPH" + "<br/><br/>";
     document.getElementById("day5").innerHTML += "Humidity: " + humidity5 + " %";
