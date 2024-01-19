@@ -51,3 +51,17 @@ body {
       width: 100%;
     }
   }
+
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+
+.Column {
+    display: table-cell;
+    padding: 12px;
+    color: white;
+    background-color: rgb(39, 12, 193); /*Optional*/
+}
