@@ -94,7 +94,7 @@ function city_clicked(city)  {
     let icon5 = json2.list[32].weather[0].icon;
     let speed5 = json2.list[32].wind.speed;
 
-    document.getElementById("icon_image").src = "http://openweathermap.org/img/w/" + icon + ".png";
+    document.getElementById("icon_image").src = "https://openweathermap.org/img/w/" + icon + ".png";
     document.getElementById("icon_image").style.display = "block";
 
     document.getElementById("temp").innerHTML = "Temp: " + round(((temp - 273.15) * 1.8 + 32)) + " F";
@@ -102,7 +102,7 @@ function city_clicked(city)  {
     document.getElementById("humidity").innerHTML = "Humidity: " + humidity + " %";
 
 
-    document.getElementById("icon_image1").src = "http://openweathermap.org/img/w/" + icon1 + ".png";
+    document.getElementById("icon_image1").src = "https://openweathermap.org/img/w/" + icon1 + ".png";
     document.getElementById("icon_image1").style.display = "block";
 
     document.getElementById("day1").innerHTML = getFormattedDate(new Date(dt1 * 1000)) + "<br/><br/>";
@@ -112,7 +112,7 @@ function city_clicked(city)  {
 
     ///////
 
-    document.getElementById("icon_image2").src = "http://openweathermap.org/img/w/" + icon2 + ".png";
+    document.getElementById("icon_image2").src = "https://openweathermap.org/img/w/" + icon2 + ".png";
     document.getElementById("icon_image2").style.display = "block";
 
     document.getElementById("day2").innerHTML = getFormattedDate(new Date(dt2 * 1000)) + "<br/><br/>";
@@ -122,7 +122,7 @@ function city_clicked(city)  {
 
     ////////
 
-    document.getElementById("icon_image3").src = "http://openweathermap.org/img/w/" + icon3 + ".png";
+    document.getElementById("icon_image3").src = "https://openweathermap.org/img/w/" + icon3 + ".png";
     document.getElementById("icon_image3").style.display = "block";
 
     document.getElementById("day3").innerHTML = getFormattedDate(new Date(dt3 * 1000)) + "<br/><br/>";
@@ -132,7 +132,7 @@ function city_clicked(city)  {
 
     //////
 
-    document.getElementById("icon_image4").src = "http://openweathermap.org/img/w/" + icon4 + ".png";
+    document.getElementById("icon_image4").src = "https://openweathermap.org/img/w/" + icon4 + ".png";
     document.getElementById("icon_image4").style.display = "block";
 
     document.getElementById("day4").innerHTML = getFormattedDate(new Date(dt4 * 1000)) + "<br/><br/>";
@@ -142,7 +142,7 @@ function city_clicked(city)  {
 
     //////
 
-    document.getElementById("icon_image5").src = "http://openweathermap.org/img/w/" + icon5 + ".png";
+    document.getElementById("icon_image5").src = "https://openweathermap.org/img/w/" + icon5 + ".png";
     document.getElementById("icon_image5").style.display = "block";
 
     document.getElementById("day5").innerHTML = getFormattedDate(new Date(dt5 * 1000)) + "<br/><br/>";
